@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oZi-uY-oMn">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dad-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DadViewController" customModule="IKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="Dad">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CHC-eT-KVY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpi-Vs-nY9">
+                                        <rect key="frame" x="55" y="107.5" width="304" height="554"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <backgroundConfiguration key="background" image="background"/>
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="cardFlip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0VH-I6-qNP"/>
+                                            <action selector="cardFlip:" destination="UWY-BA-Psq" eventType="touchUpInside" id="rLn-kh-T7g"/>
+                                            <action selector="cardFlip:" destination="rgW-IT-UT2" eventType="touchUpInside" id="tus-XL-vry"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstItem="lpi-Vs-nY9" firstAttribute="leading" secondItem="CHC-eT-KVY" secondAttribute="leading" constant="55" id="8pD-yb-o2l"/>
+                                    <constraint firstAttribute="trailing" secondItem="lpi-Vs-nY9" secondAttribute="trailing" constant="55" id="ABc-cc-8Ew"/>
+                                    <constraint firstItem="lpi-Vs-nY9" firstAttribute="top" secondItem="CHC-eT-KVY" secondAttribute="top" constant="107.5" id="EzV-ej-K8H"/>
+                                    <constraint firstAttribute="trailing" secondItem="lpi-Vs-nY9" secondAttribute="trailing" constant="55" id="Tgo-lW-dFA"/>
+                                    <constraint firstAttribute="bottom" secondItem="lpi-Vs-nY9" secondAttribute="bottom" constant="107.5" id="omz-Uc-v5I"/>
+                                    <constraint firstItem="lpi-Vs-nY9" firstAttribute="centerY" secondItem="CHC-eT-KVY" secondAttribute="centerY" id="wlY-Ie-Kfe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CHC-eT-KVY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="8Ps-KH-ldz"/>
+                            <constraint firstItem="CHC-eT-KVY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dsc-ja-Kvx"/>
+                            <constraint firstItem="CHC-eT-KVY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hWJ-7i-y0x"/>
+                            <constraint firstItem="CHC-eT-KVY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tvR-bw-4mn"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dad" image="smiley.fill" catalog="system" id="gws-hj-SLA"/>
+                    <connections>
+                        <outlet property="cardBtn" destination="lpi-Vs-nY9" id="8te-B7-Uka"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924.63768115942037" y="902.67857142857133"/>
+        </scene>
+        <!--Pun-->
+        <scene sceneID="AAa-mg-ECB">
+            <objects>
+                <viewController id="rgW-IT-UT2" customClass="PunViewController" customModule="IKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CjT-4q-885">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0hM-5B-8te">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQt-9W-PqO">
+                                        <rect key="frame" x="55" y="107.5" width="304" height="554"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <backgroundConfiguration key="background" image="background"/>
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="cardFlip:" destination="rgW-IT-UT2" eventType="touchUpInside" id="BdG-th-PoC"/>
+                                            <action selector="cardFlip:" destination="UWY-BA-Psq" eventType="touchUpInside" id="gc0-l2-JTg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ZQt-9W-PqO" secondAttribute="trailing" constant="55" id="Wul-X8-ZMg"/>
+                                    <constraint firstItem="ZQt-9W-PqO" firstAttribute="top" secondItem="0hM-5B-8te" secondAttribute="top" constant="107.5" id="Z4X-AR-iel"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZQt-9W-PqO" secondAttribute="bottom" constant="107.5" id="Z5r-hS-FjZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZQt-9W-PqO" secondAttribute="trailing" constant="55" id="omn-E0-wbM"/>
+                                    <constraint firstItem="ZQt-9W-PqO" firstAttribute="centerY" secondItem="0hM-5B-8te" secondAttribute="centerY" id="sPY-WG-cdy"/>
+                                    <constraint firstItem="ZQt-9W-PqO" firstAttribute="leading" secondItem="0hM-5B-8te" secondAttribute="leading" constant="55" id="wN4-JU-ro4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Iml-NM-9VI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0hM-5B-8te" firstAttribute="bottom" secondItem="Iml-NM-9VI" secondAttribute="bottom" id="IzN-yO-EVc"/>
+                            <constraint firstItem="0hM-5B-8te" firstAttribute="top" secondItem="Iml-NM-9VI" secondAttribute="top" id="eOE-OD-xVQ"/>
+                            <constraint firstItem="0hM-5B-8te" firstAttribute="trailing" secondItem="Iml-NM-9VI" secondAttribute="trailing" id="fP9-a8-rZW"/>
+                            <constraint firstItem="0hM-5B-8te" firstAttribute="leading" secondItem="Iml-NM-9VI" secondAttribute="leading" id="pR1-JE-7MB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pun" image="smiley.fill" catalog="system" id="z6d-UO-tVc"/>
+                    <connections>
+                        <outlet property="cardBtn" destination="ZQt-9W-PqO" id="oJT-GK-8JU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mWd-Yv-qmc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1813.0434782608697" y="499.55357142857139"/>
+        </scene>
+        <!--Good-->
+        <scene sceneID="JBe-ph-bQC">
+            <objects>
+                <viewController id="UWY-BA-Psq" customClass="GoodViewController" customModule="IKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X1W-FA-uGn" customClass="GLKView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LcJ-if-aVO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Stl-8z-Q4a">
+                                        <rect key="frame" x="55" y="125" width="304" height="536"/>
+                                        <inset key="titleEdgeInsets" minX="-10" minY="0.0" maxX="-10" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <backgroundConfiguration key="background" image="background"/>
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="cardFlip:" destination="UWY-BA-Psq" eventType="touchUpInside" id="D7F-kI-1Tr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Stl-8z-Q4a" secondAttribute="trailing" constant="55" id="3Uq-4O-PDv"/>
+                                    <constraint firstItem="Stl-8z-Q4a" firstAttribute="leading" secondItem="LcJ-if-aVO" secondAttribute="leading" constant="55" id="e6h-VF-Ie4"/>
+                                    <constraint firstItem="Stl-8z-Q4a" firstAttribute="top" secondItem="LcJ-if-aVO" secondAttribute="top" constant="125" id="eSY-1c-ISQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Stl-8z-Q4a" secondAttribute="bottom" constant="108" id="sp8-Ev-68I"/>
+                                    <constraint firstAttribute="trailing" secondItem="Stl-8z-Q4a" secondAttribute="trailing" constant="55" id="wM2-yi-QcP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="x5u-Ua-786"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LcJ-if-aVO" firstAttribute="top" secondItem="x5u-Ua-786" secondAttribute="top" id="8YD-DX-UHk"/>
+                            <constraint firstItem="x5u-Ua-786" firstAttribute="bottom" secondItem="LcJ-if-aVO" secondAttribute="bottom" id="dNX-uS-XSE"/>
+                            <constraint firstItem="LcJ-if-aVO" firstAttribute="trailing" secondItem="x5u-Ua-786" secondAttribute="trailing" id="oZ5-NG-tCJ"/>
+                            <constraint firstItem="LcJ-if-aVO" firstAttribute="leading" secondItem="x5u-Ua-786" secondAttribute="leading" id="wIN-QA-LFT"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Good" image="smiley.fill" catalog="system" id="Ya1-Pq-Pcw"/>
+                    <connections>
+                        <outlet property="cardBtn" destination="Stl-8z-Q4a" id="Vy4-TE-J0A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oIx-I2-B2n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1814.4927536231885" y="-208.25892857142856"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Mo0-WM-eYr">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" id="oZi-uY-oMn" customClass="TabBarController" customModule="IKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xyc-kB-6lh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="UWY-BA-Psq" kind="relationship" relationship="viewControllers" id="Zld-1l-3sR"/>
+                        <segue destination="rgW-IT-UT2" kind="relationship" relationship="viewControllers" id="yjH-hx-kMf"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="zHV-LD-gIC"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YeZ-lG-Geo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="925" y="95"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="800" height="1280"/>
+        <image name="smiley.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
